@@ -1,0 +1,162 @@
+@import url('https://fonts.googleapis.com/css2?family=Spartan:wght@400;500;700&display=swap');
+*{
+    box-sizing: border-box;
+}
+body{
+    background-image: url('/images/bg-pattern-top-desktop.svg'), url('./images/bg-pattern-bottom-desktop.svg');
+    background-repeat: no-repeat, no-repeat;
+    background-position: top left, bottom right;
+    font-family: 'Spartan', sans-serif;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: auto;
+    padding: 30px;
+    min-height: 100vh;
+}
+.container{
+    max-width: 1200px;
+    width: 1400px;
+}
+.top-section{
+    color: hsl(300, 43%, 22%);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 20px;
+}
+.left-top h1{
+    font-size: 40px;
+    font-weight: 600;
+    margin-bottom: 10px;
+}
+.left-top p{
+    color: hsl(303, 10%, 53%);
+    font-size: 13px;
+    opacity: .7;
+    line-height: 20px;
+}
+.left-top{
+    flex: 1.5;
+    margin-right: 70px;
+}
+.right-top{
+    flex: 2;
+    padding-right: 100px;
+    max-width: 500px;
+}
+.rating{
+    background-color: hsl(300, 24%, 96%);
+    border-radius: 6px;
+    font-size: 10px;
+    display: flex;
+    align-items: center;
+    padding: 5px 20px;
+    margin: 10px;
+}
+.rating p{
+    font-weight: 700;
+    padding-left: 20px;
+    padding-right: 30px;
+}
+.rating span{
+    color: orange;
+    font-size: 12px;
+    padding: 3px;
+}
+.rating-position-2{
+    margin-left: 40px;
+    margin-right: -40px;
+}
+.rating-position-3{
+    margin-left: 80px;
+    margin-right: -80px;
+}
+.bottom-section{
+    display: flex;
+    padding-top: 50px;
+    margin: 20px;
+}
+.verified-buyer{
+    background-color: hsl(300, 43%, 22%);
+    border-radius: 5px;
+    margin: 15px;
+    overflow: hidden;
+    padding: 25px;
+}
+.image-name{
+    display: flex;
+    align-items: center;
+    padding-top: 10px;
+}
+img{
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+}
+.image-name p{
+    padding-left: 20px;
+}
+.image-name :nth-child(odd) {
+    color: white;
+    font-size: 11px;
+    font-weight: 600;
+}
+.image-name :nth-child(even) {
+    color: hsl(333, 80%, 67%);
+    font-size: 9px;
+    font-weight: 600;
+    margin-top: -6px;
+}
+.verified-buyer-p{
+    color: white;
+    font-size: 9px;
+    font-weight: 400;
+    line-height: 15px;
+    padding-top: 6px;
+}
+.buyer-2{
+    margin-top: 30px;
+    margin-bottom: -0px;
+}
+.buyer-3{
+    margin-top: 50px;
+    margin-bottom: -20px;
+}
+
+@media screen and (max-width: 800px){
+    .top-section{
+        display: block;
+        text-align: center;
+    }
+    .left-top{
+        margin: 50px;
+    }
+    .left-top h1{
+        font-size: 30px;
+        font-weight: 600;
+    }
+    .left-top p{
+        font-size: 11px;
+    }
+    .right-top{
+        padding: 0 20px;
+        margin: 0 auto;
+        max-width: 90%;
+    }
+    .rating{
+        display: block;
+        align-items: center;
+        justify-content: center;
+        margin: 10px;
+        text-align: center;
+    }
+    .bottom-section{
+        display: block;
+        margin-top: -40px;
+        padding: 40px;
+    }
+    .verified-buyer{
+        margin: 10px;
+    }
+}
